@@ -1,0 +1,61 @@
+// breakpoints
+
+@mixin bigger-than($q: $bplg) {
+	@media screen and (min-width: $q) {
+		@content;
+	}
+}
+@mixin smaller-than($q: $bplg) {
+	@media screen and (max-width: $q) {
+		@content;
+	}
+}
+@mixin between-x($q, $r) {
+	@media screen and (min-width: $q) and (max-width: $r) {
+		@content;
+	}
+}
+
+@mixin taller-than($q: 720px) {
+	@media screen and (min-height: $q) {
+		@content;
+	}
+}
+@mixin shorter-than($q: 720px) {
+	@media screen and (max-height: $q) {
+		@content;
+	}
+}
+@mixin between-y($q, $r) {
+	@media screen and (min-height: $q) and (max-height: $r) {
+		@content;
+	}
+}
+
+@mixin superbig() {
+	@include bigger-than($bpx2) {
+		@include taller-than() {
+			@content;
+		}
+	}
+}
+
+
+// hover rules
+
+@mixin ihover() {
+	@media (hover: hover) {
+		@content;
+	}
+}
+
+
+// layout
+
+@mixin flex($jus: center, $ali: center) {
+	display: flex;
+	justify-content: $jus;
+	align-items: $ali;
+}
+
+

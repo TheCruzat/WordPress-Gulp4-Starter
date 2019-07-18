@@ -1,0 +1,14 @@
+// basics
+
+a, a:visited {
+
+	color: $clr;
+
+	&:hover {
+
+	}
+
+	&:active {
+		color: lighten($clr, 25%);
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "neu-project",
+  "version": "1.0.0",
+  "description": "thinger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "from-scratch",
+    "wordpress-theme",
+    "sass"
+  ],
+  "author": "Dan Cruzat",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  }
+}
