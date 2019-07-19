@@ -1,15 +1,13 @@
 /*!   
-Theme Name: WordPress Gulp4 Starter
-Description: Here we go again
-Author: Dan Cruzat
+Theme Name: WordPress Gulp 4 Starter
+Description: Bare bones starter
+Author: Dan Cruzat for Cruzat.Media & E+C
 Version: 1
 */
 
 @import 'reset';
 @import 'vars';
 @import 'mixins';
-@import 'fonts';
 
 /*brand*/
-@import 'brand';
 @import 'base';
