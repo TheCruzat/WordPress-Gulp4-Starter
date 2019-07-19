@@ -80,7 +80,7 @@ var
 // clear the room
   async function clean() {
     return dL.sync([dest], {force: true});
-  }
+    }
 
 // reload teh bsync
   function reload() {
@@ -105,13 +105,10 @@ var
   exports.img = img;
 
 
-// step 3: run gulp build, assign your newly baked theme
-                                                          
-
-// default gulp triggers Watcher // step 4: run gulp, make your edits
+// default gulp triggers Watcher 
   gulp.task('default', watch);      
 
-// all done let's build // step 5: run gulp build one more time for final clear-n-cook
+// all done let's build
   var build = gulp.series(clean, gulp.parallel(style, js, php, img));
   exports.build = build;
 
