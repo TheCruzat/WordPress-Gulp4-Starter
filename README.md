@@ -17,7 +17,7 @@ Also, this is a bare-bones starter theme, we have an index.php, a functions.php 
 
 ### Get Gulp
 
-First, you will need Gulp installed globally. If you do not have it yet, [get it](gulpjs.com):
+First, you will need Gulp installed globally. If you do not have it yet, [get it](http://gulpjs.com):
 
 ```
 npm install gulp-cli -g
