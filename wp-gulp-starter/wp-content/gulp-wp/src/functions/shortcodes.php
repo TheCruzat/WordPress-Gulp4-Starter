@@ -1,4 +1,4 @@
-s<?php
+<?php
 
 // copyright symbol [cr]
 function copy_r() 	{ 	return '&copy;';    }
