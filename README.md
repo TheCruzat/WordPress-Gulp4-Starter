@@ -29,21 +29,21 @@ gulp --help
 
 ### Get the Set
 
-Next, download the fileset. The root of the set lives in the wp-content directory of a WordPress project. It can be renamed, but it wants to live in the wp-content folder alongside themes and plugins. It is configured to output into the themes folder using the **dest** variable in **src/gulpfile.js:13** to define the folder name.
+Next, download the fileset. The root of the set lives in the wp-content directory of a WordPress project. It can be renamed, but it wants to live in the **wp-content** folder alongside themes and plugins. It is configured to output into the themes folder using the **dest** variable in **src/gulpfile.js:13** to define the folder name.
 
 
 
 ### Get Pressed
 
-If you are starting a site build from scratch, grab the [latest fileset](https://wordpress.org/latest.zip) for WordPress. You can copy all of the contents *except* for the ./wp-content/ folder over to the Gulp fileset, being careful to copy from the root of one fileset into the other.
+If you are starting a site build from scratch, grab the [latest fileset](https://wordpress.org/latest.zip) for WordPress. Set up the fileset like any other project, then drop the starter folder into the **wp-content** folder alongside plugins and themes.
 
-If you're using this to create a new theme for an existing site, simply put the gulp-wp folder into its ./wp-content folder and continue. 
+If you're using this with an existing site, just drop it into the **wp-content** folder. 
 
 
 
 ### Get Personal
 
-If you want, rename the gulp-wp folder. 
+If you want, rename the wp-gulp-starter folder. 
 
 Open **src/scss/style.scss** to edit your style.css details.
 
