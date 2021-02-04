@@ -29,7 +29,7 @@ gulp --help
 
 ### Get the Set
 
-Next, download the fileset. The root of the set is the root of a WordPress project, the important folder is **gulp-wp**. It can be renamed, but it wants to live in the ./wp-content/ folder alongside themes and plugins. The rest of a WordPress site can be added into and around this structure, or the folder can be added to an existing site's ./wp-content/ folder.
+Next, download the fileset. The root of the set lives in the wp-content directory of a WordPress project. It can be renamed, but it wants to live in the wp-content folder alongside themes and plugins. It is configured to output into the themes folder using the **dest** variable in **src/gulpfile.js:13** to define the folder name.
 
 
 
