@@ -11,7 +11,7 @@ var
 // location variables
   src         = './src/',
   dest        = '../themes/wp-gulp4-starter',  // step 1: change this to your theme name
-  stage       = 'prv.dv',                     // step 2: change this to your local dev url
+  stage       = 'example.dev',                     // step 2: change this to your local dev url
 
 // paths
   paths = {
