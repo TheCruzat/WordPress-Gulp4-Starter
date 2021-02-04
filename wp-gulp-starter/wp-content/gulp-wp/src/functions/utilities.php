@@ -14,3 +14,17 @@ function cook_slug($str) {
 function nu($i) {
     return preg_replace("/[^0-9]/", "", $i);
 }
+
+// shorthand content filter
+function cn($i) {
+	return apply_filters('the_content', $i);
+}
+
+// shorthand variable checker
+function exist($q) {
+	if($q != null && $q != '') {
+		return true;
+	} else {
+		return false;
+	}
+}
