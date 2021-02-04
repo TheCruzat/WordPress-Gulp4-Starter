@@ -95,7 +95,11 @@ We have our functions broken out into child pages in the src/functions/ folder, 
 
 *In src/functions/globals.php, the upload directory has been changed to 'media'. Delete this line if you want it to default back to ./wp-content/uploads*
 
-Utilities include a string-to-slug cooker and a numeric "sanitizer" to remove non-numeric characters (very handy for phone numbers in links).
+Utilities include:
+- a string-to-slug cooker
+- a numeric "sanitizer" to remove non-numeric characters (very handy for phone numbers in links)
+- a content filter shorthand
+- a boolean sniffer to detect variable content
 
 
 
