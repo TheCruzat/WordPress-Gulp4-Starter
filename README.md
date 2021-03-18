@@ -4,7 +4,7 @@ A blue-box mac’n’cheese solution for getting the ball rolling quickly on the
 
 
 
-### Before We Begin
+## Before We Begin
 
 This project assumes you have a working knowledge of [WordPress](https://wordpress.org) as a system and already have [Docker](https://www.docker.com) bumping for your local dev needs. You should also be comfortable with `npm` packages and working in the console. Experience with [Gulp](https://gulpjs.com) is handy but not necessary, this will walk you through that setup.
 
@@ -17,7 +17,7 @@ If you have another solution besides Docker for local development, no fear, just
 # Getting Started
 
 
-### Get Gulp
+## Get Gulp
 
 First, you will need Gulp installed globally. If you do not have it yet, [get it](http://gulpjs.com):
 
@@ -29,7 +29,7 @@ gulp --help
 ```
 
 
-### Get the Set, Docker + WordPress
+## Get the Set, Docker + WordPress
 
 Next, download the fileset. This has been optimized for quickstart with Docker, just open a terminal and enter `docker-compose up -d`, standing up a Docker container in detached mode (allowing you to keep the terminal open for running Gulp or etc). The url will default to `localhost:8080` but can be changed to whatever you'd like via `docker-compose.yml:35`.
 
@@ -38,13 +38,13 @@ Next, download the fileset. This has been optimized for quickstart with Docker, 
 There's a brand spanking new WordPress instance at the url, go through the normal site setup. You can go to `Appearance > Themes` in the side rail and activate the `WordPress Gulp 4 Starter` theme to jump into it immediately, although I would recommend Personalization (see below).
 
 
-#### Migrating an Existing Site?
+### Migrating an Existing Site?
 
 We have a muted configuration for [PHPMyAdmin](https://www.phpmyadmin.net) in place in `docker-compose.yml:15-28`, simply uncomment the block and run `docker-compose up -d` anew. PHPMyAdmin will then default to `http://localhost:9090`, this can be changed via `docker-compose.yml:23`. Just remember to close down your container if you comment it back out, it will need to be restarted.
 
 
 
-### Taking the Gulp
+## Taking the Gulp
 
 With WordPress up and running and our theme in place, it's time to kick Gulp into gear. Now why are we using Gulp? Because you will want to do things like edit files and build out your theme, using Gulp handles your `SCSS > CSS` processing, minification, etc, and reloads the site automatically when files change. Very handy.
 
@@ -52,14 +52,14 @@ The `gulpfile.js` is configured to output the fileset into the `./wp-content/the
 
 
 
-### Get Personal
+## Get Personal
 
 Open `src/scss/style.scss` to edit your style.css details. This is what will display in the listing in `Appearance > Themes`.
 
 At `gulpfile.js:13` change `dest` to your theme name ala '../themes/your-theme-name'
 
 
-#### If You Are Not Using Docker!
+### If You Are Not Using Docker!
 Before you see any theme available in `Appearance > Themes` you need to run a build to get your initial fileset:
 ```
 gulp build
@@ -69,7 +69,7 @@ There is now a folder in the site's `[root]/wp-content/themes/` for the newly co
 
 
 
-### Get Crackin'
+## Get Crackin'
 
 Let's put the Watcher on the Wall:
 ```
@@ -80,7 +80,7 @@ Bam! You should have a browser pop up with a localhost:3000 (or similar) mirrori
 
 
 
-### Get It All
+## Get It All
 
 Once you have completed your masterpiece, a final cook:
 
@@ -98,7 +98,7 @@ While the layout collection is intentionally minimal, there are several tools in
 
 
 
-### PHP Toolies
+## PHP Toolies
 
 We have our functions broken out into child pages in the src/functions/ folder, including custom post types, shortcodes, script/style imports, utilities and global settings.
 
@@ -106,13 +106,14 @@ We have our functions broken out into child pages in the src/functions/ folder, 
 
 Utilities include:
 - a string-to-slug cooker
-- a numeric "sanitizer" to remove non-numeric characters (very handy for phone numbers in links)
+- a numeric sanitizer to remove non-numeric characters (very handy for phone numbers in links)
+- a url display sanitizer to remove http/https from valid url for display
 - a content filter shorthand
-- a boolean sniffer to detect variable content
+- a boolean sniffer to detect variable content -- "Does this exist?"
 
 
 
-### CSS Toolies
+## CSS Toolies
 
 Our SCSS files are also broken out into child files, they live in the src/scss/ folder.
 
@@ -124,12 +125,12 @@ Many basics are included, including:
 
 
 
-# Acknowledgements
+### Acknowledgements
 
 - [Matt Banks'](https://github.com/mattbanks) work with WordPress starters circa 2015 was an inspiration, salud
 - [Zell Liew's](https://css-tricks.com/gulp-for-beginners/) recipe informed the previous version of this starter, salud
 
 
-# Author
+### Author
 
 [**Dan Cruzat**](http://thecruzat.com) for [Cruzat.Media](http://cruzat.media) and [E+C](http://eencee.me).
