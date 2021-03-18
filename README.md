@@ -38,7 +38,7 @@ Next, download the fileset. This has been optimized for quickstart with Docker, 
 There's a brand spanking new WordPress instance at the url, go through the normal site setup. You can go to `Appearance > Themes` in the side rail and activate the `WordPress Gulp 4 Starter` theme to jump into it immediately, although I would recommend Personalization (see below).
 
 
-##### Migrating an Existing Site?
+#### Migrating an Existing Site?
 
 We have a muted configuration for [PHPMyAdmin](https://www.phpmyadmin.net) in place in `docker-compose.yml:15-28`, simply uncomment the block and run `docker-compose up -d` anew. PHPMyAdmin will then default to `http://localhost:9090`, this can be changed via `docker-compose.yml:23`. Just remember to close down your container if you comment it back out, it will need to be restarted.
 
@@ -59,7 +59,7 @@ Open `src/scss/style.scss` to edit your style.css details. This is what will dis
 At `gulpfile.js:13` change `dest` to your theme name ala '../themes/your-theme-name'
 
 
-##### If You Are Not Using Docker!
+#### If You Are Not Using Docker!
 Before you see any theme available in `Appearance > Themes` you need to run a build to get your initial fileset:
 ```
 gulp build
