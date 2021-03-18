@@ -11,7 +11,7 @@ var
 // location variables
   src         = './src/',
   dest        = '../themes/wp-gulp4-starter',  // step 1: change this to your theme name
-  stage       = 'example.dev',                     // step 2: change this to your local dev url
+  stage       = 'localhost:8080',                     // step 2: change this to your local dev url
 
 // paths
   paths = {
@@ -105,8 +105,8 @@ var
   exports.img = img;
 
 
-// default gulp triggers Watcher 
-  gulp.task('default', watch);      
+// default gulp triggers Watcher
+  gulp.task('default', watch);
 
 // all done let's build
   var build = gulp.series(clean, gulp.parallel(style, js, php, img));
