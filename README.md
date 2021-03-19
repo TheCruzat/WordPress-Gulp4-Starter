@@ -6,7 +6,7 @@ A blue-box mac’n’cheese solution for getting the ball rolling quickly on the
 
 ## Before We Begin
 
-This project assumes you have a working knowledge of [WordPress](https://wordpress.org) as a system and already have [Docker](https://www.docker.com) bumping for your local dev needs. You should also be comfortable with `npm` packages and working in the console. Experience with [Gulp](https://gulpjs.com) is handy but not necessary, this will walk you through that setup.
+This project assumes you have a working knowledge of <a href="https://wordpress.org" target="_blank">WordPress</a> as a system and already have <a href="https://www.docker.com" target="_blank">Docker</a> bumping for your local dev needs. You should also be comfortable with `npm` packages and working in the console. Experience with <a href="https://gulpjs.com" target="_blank">Gulp</a> is handy but not necessary, this will walk you through that setup.
 
 Also, this is a bare-bones starter theme, we have an `index.php`, a `functions.php` and a very empty `style.css`. If you are not yet ready to build out a theme and its required templates yourself, you will want to start with a more complete theme.
 
@@ -19,7 +19,7 @@ If you have another solution besides Docker for local development, no fear, just
 
 ## Get Gulp
 
-First, you will need Gulp installed globally. If you do not have it yet, [get it](http://gulpjs.com):
+First, you will need Gulp installed globally. If you do not have it yet, <a href="http://gulpjs.com" target="_blank">get it</a>:
 
 ```
 npm install gulp-cli -g
@@ -31,7 +31,7 @@ gulp --help
 
 ## Get the Set, Docker + WordPress
 
-Next, download the fileset. This has been optimized for quickstart with Docker, just open a terminal and enter `docker-compose up -d`, standing up a Docker container in detached mode (allowing you to keep the terminal open for running Gulp or etc). The url will default to `localhost:8080` but can be changed to whatever you'd like via `docker-compose.yml:35`.
+Next, download the fileset. This has been optimized for quickstart with Docker, just open a terminal and enter `docker-compose up -d`, this stands up a Docker container in detached mode (allowing you to keep the terminal open for running Gulp or etc). The url will default to `localhost:8080` but can be changed to whatever you'd like via `docker-compose.yml:35`.
 
 (If you need to shut down your Docker container, use `docker-compose down`.)
 
@@ -40,7 +40,7 @@ There's a brand spanking new WordPress instance at the url, go through the norma
 
 ### Migrating an Existing Site?
 
-We have a muted configuration for [PHPMyAdmin](https://www.phpmyadmin.net) in place in `docker-compose.yml:15-28`, simply uncomment the block and run `docker-compose up -d` anew. PHPMyAdmin will then default to `http://localhost:9090`, this can be changed via `docker-compose.yml:23`. Just remember to close down your container if you comment it back out, it will need to be restarted.
+We have a muted configuration for <a href="https://www.phpmyadmin.net" target="_blank">PHPMyAdmin</a> in place in `docker-compose.yml:15-28`, simply uncomment the block and run `docker-compose up -d` anew. PHPMyAdmin will then default to `http://localhost:9090`, this can be changed via `docker-compose.yml:23`. Just remember to close down your container if you comment it back out, it will need to be restarted.
 
 
 
@@ -60,6 +60,7 @@ At `gulpfile.js:13` change `dest` to your theme name ala '../themes/your-theme-n
 
 
 ### If You Are Not Using Docker!
+
 Before you see any theme available in `Appearance > Themes` you need to run a build to get your initial fileset:
 ```
 gulp build
@@ -127,10 +128,10 @@ Many basics are included, including:
 
 ### Acknowledgements
 
-- [Matt Banks'](https://github.com/mattbanks) work with WordPress starters circa 2015 was an inspiration, salud
-- [Zell Liew's](https://css-tricks.com/gulp-for-beginners/) recipe informed the previous version of this starter, salud
+- <a href="https://github.com/mattbanks" target="_blank">Matt Banks'</a> work with WordPress starters circa 2015 was an inspiration, salud
+- <a href="https://css-tricks.com/gulp-for-beginners" target="_blank">Zell Liew's</a> recipe informed the previous version of this starter, salud
 
 
 ### Author
 
-[**Dan Cruzat**](http://thecruzat.com) for [Cruzat.Media](http://cruzat.media) and [E+C](http://eencee.me).
+<a href="https://thecruzat.com" target="_blank">**Dan Cruzat**</a> for <a href="https://cruzat.media" target="_blank">Cruzat.Media</a> and <a href="https://eencee.me" target="_blank">E+C</a>.
