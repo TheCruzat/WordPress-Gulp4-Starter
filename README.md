@@ -50,6 +50,16 @@ With WordPress up and running and our theme in place, it's time to kick Gulp int
 
 The `gulpfile.js` is configured to output the fileset into the `./wp-content/themes` folder using the `dest` variable in `src/gulpfile.js:13` to define the folder name.
 
+To begin with Gulp, navigate into your `/wp-content/wp-gulp-starter` folder and run
+```
+npm i
+```
+or
+```
+yarn
+```
+to collect all required npm packages.
+
 
 
 ## Get Personal
