@@ -32,7 +32,7 @@ services:
       - db
     image: wordpress
     ports:
-      - "8080:80"     # change to whatever you want
+      - "5050:80"     # change to whatever you want
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
@@ -41,7 +41,7 @@ services:
       WORDPRESS_DEBUG: 1
     working_dir: /var/www/html
     volumes:
-      # - ./media:/var/www/html/media       # still working on assigning custom upload folder
+      - ./media:/var/www/html/media
       - ./wp-content:/var/www/html/wp-content
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 volumes:
