@@ -11,7 +11,7 @@ var
 // location variables
   src         = './src/',
   dest        = '../themes/wp-gulp4-starter',  // step 1: change this to your theme name
-  stage       = 'localhost:8080',                     // step 2: change this to your local dev url
+  stage       = 'localhost:5050',                     // step 2: change this to your local dev url
 
 // paths
   paths = {
@@ -19,7 +19,7 @@ var
       scss: src+'scss/**/*.scss',
       js: src+'js/**/*.js',
       php: src+'**/*.php',
-      img: src+'img/**/*.+(png|jpg|gif|svg)'
+      img: src+'img/**/*.+(png|jpg|gif|svg|ico)'
     },
     dest: {
       js: dest+'/js',
@@ -29,7 +29,7 @@ var
 
 // requirements
   gulp            = require("gulp"),
-  sass            = require("gulp-sass"),
+  sass            = require("gulp-sass")(require("sass")),
   postcss         = require("gulp-postcss"),
   autoprefixer    = require("autoprefixer"),
   cssnano         = require("cssnano"),
