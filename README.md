@@ -144,4 +144,4 @@ Many basics are included, including:
 
 ### Author
 
-<a href="https://thecruzat.com" target="_blank">**Dan Cruzat**</a> for <a href="https://cruzat.media" target="_blank">Cruzat.Media</a> and <a href="https://eencee.me" target="_blank">E+C</a>.
+<a href="https://thecruzat.com" target="_blank">**Dan Cruzat**</a>
