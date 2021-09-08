@@ -1,5 +1,14 @@
-<html>
-<head><?php wp_head(); ?></head>
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <title>WordPress Gulp 4 Starter by Dan Cruzat</title>
+  <link rel="icon"
+      type="image/svg+xml"
+      href="<?php echo IMG; ?>favi.svg?v=1.1">
+  <link rel="alternate icon"
+      href="<?php echo IMG; ?>favi.ico?v=1.1">
+  <?php wp_head(); ?>
+</head>
 <body>
 <?php
 if ( have_posts() ) {
