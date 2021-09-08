@@ -1,6 +1,6 @@
 <?php
 // set up url based globals
-define('URL',get_bloginfo('site_url'));
+define('URL',get_site_url());
 define('THEME',get_bloginfo('template_directory'));
 define('IMG',THEME.'/img/');
 
